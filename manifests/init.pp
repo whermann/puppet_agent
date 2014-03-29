@@ -64,7 +64,7 @@ class puppet_agent (
   validate_string($open_source_logdir)
   validate_string($open_source_rundir)
 
-  # manage puppet.conf & service according to Puppet version defined
+  # set configuration parameters according to Puppet version defined
   case $install_type {
     'enterprise': {
       $puppet_config_path = $enterprise_path

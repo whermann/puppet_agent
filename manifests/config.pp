@@ -1,13 +1,13 @@
 # == Class: puppet_agent::config
 #
-# Drops in the templated puppet.conf to the appropriate path
-# dependant on the type of Puppet installed.
+# Drops in the templated puppet.conf to the appropriate path dependant on the
+# type of Puppet installed.
 #
 # === Variables
 #
 # [*puppet_config_path*]
-#   The path to Puppet's puppet.conf file dependant on the type
-#   of Puppet installation defined
+#   The path to Puppet's puppet.conf file dependant on the type of Puppet
+#   installation defined
 #
 # [*config_template*]
 #   Locatation of the module's puppet.conf template

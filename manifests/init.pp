@@ -85,7 +85,7 @@ class puppet_agent (
       $puppet_rundir      = $open_source_rundir
     }
     default: {
-      fail("The ${module_name} is unable to determine the puppet_type.")
+      fail("The ${module_name} is unable to determine the install_type.")
     }
   }
 

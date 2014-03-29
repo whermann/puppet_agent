@@ -12,7 +12,7 @@ Apache GPL v2
 Author
 -------
 
-* Brendan Murtagh [@bmurt](https://github.com/bmurt/)
+* Brendan Murtagh - [@bmurt](https://github.com/bmurt/)
 
 Support
 -------

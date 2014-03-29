@@ -29,6 +29,9 @@
 # [*service_enable*]
 #   Whether Puppet's service should be enabled to start at boot
 #
+# [*runinterval*]
+#   Configure Puppet's runinterval. Defaults to 28800 seconds (8 hrs)
+#
 # === Authors
 #
 # Brendan Murtagh <brendan.r.murtagh@gmail.com>
@@ -39,13 +42,28 @@
 #
 class puppet_agent::params {
 
-  $install_type     = 'enterprise'
-  $enterprise_path  = '/etc/puppetlabs/puppet'
-  $open_source_path = '/etc/puppet'
-  $enterprise_bin   = 'pe-puppet-agent'
-  $open_source_bin  = 'puppet'
-  $config_template  = 'puppet_agent/puppet.conf.erb'
-  $service_ensure   = 'running'
-  $service_enable   = true
+  # general params
+  $install_type      = 'enterprise'
+  $config_template   = 'puppet_agent/puppet.conf.erb'
+  $service_ensure    = 'running'
+  $service_enable    = true
+  $runinterval       = '28800' # 8hrs
+  $puppetmaster      = 'puppetmaster.domain.com'
+  # enterprise params
+  $enterprise_path   = '/etc/puppetlabs/puppet'
+  $enterprise_bin    = 'pe-puppet-agent'
+  $enterprise_user   = 'pe-puppet'
+  $enterprise_group  = 'pe-puppet'
+  $enterprise_vardir = '/var/opt/lib/pe-puppet'
+  $enterprise_logdir = '/var/log/pe-puppet'
+  $enterprise_rundir = '/var/run/pe-puppet'
+  # open_source params
+  $open_source_path  = '/etc/puppet'
+  $open_source_bin   = 'puppet'
+  $open_source_group = 'puppet'
+  $open_source_user  = 'puppet'
+  $open_source_vardir = '/var/opt/lib/puppet'
+  $open_source_logdir = '/var/log/puppet'
+  $open_source_rundir = '/var/run/puppet'
 
 }

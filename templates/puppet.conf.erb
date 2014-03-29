@@ -1,22 +1,22 @@
 # File managed by Puppet
 
 [main]
-    vardir = /var/opt/lib/pe-puppet
-    logdir = /var/log/pe-puppet
-    rundir = /var/run/pe-puppet
-    modulepath = /etc/puppetlabs/puppet/modules:/opt/puppet/share/puppet/modules
-    user  = pe-puppet
-    group = pe-puppet
+    vardir = <%= @puppet_vardir %>
+    logdir = <%= @puppet_logdir %>
+    rundir = <%= @puppet_rundir %>
+    modulepath = <%= @puppet_config_path %>/modules:/opt/puppet/share/puppet/modules
+    user  = <%= @puppet_user %>
+    group = <%= @puppet_group %>
     archive_files = true
-    archive_file_server = <%= @puppetmasterfqdn %>
+    archive_file_server = <%= @puppetmaster %>
 
 [agent]
     environment = <%= @environment %>
     certname = <%= @fqdn %> 
-    server = <%= @puppetmasterfqdn %>
+    server = <%= @puppetmaster %>
     report = true
     classfile = $vardir/classes.txt
     localconfig = $vardir/localconfig
     graph = true
     pluginsync = true
-    runinterval = 28800 # 8hrs
+    runinterval = <%= runinterval %>

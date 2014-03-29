@@ -1,7 +1,5 @@
-Module 
+puppet_agent 
 -------
-
-puppet_agent
 
 * Puppet module to manage the puppet.conf via Puppet for a node. 
 * Supports Puppet Enterprise and Puppet Open Source editions

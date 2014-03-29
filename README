@@ -1,6 +1,4 @@
-puppet_agent
-
-Puppet module for managing a node's puppet.conf
+puppet_agent :: Puppet module for managing a node's puppet.conf
 
 License
 -------

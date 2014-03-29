@@ -1,5 +1,5 @@
 name    'bmurt-puppet_agent'
-version '0.0.1'
+version '0.0.2'
 source 'https://github.com/bmurt/puppet_agent'
 author 'Brendan Murtagh'
 license 'Apache License, Version 2.0'

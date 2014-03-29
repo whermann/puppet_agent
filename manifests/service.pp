@@ -2,17 +2,6 @@
 #
 # Manages the Puppet service
 #
-# === Variables
-#
-# [*puppet_service*]
-#   Puppet's binary name dependant on the type of Puppet installation
-#
-# [*service_ensure*]
-#   Whether Puppet's service should be running
-#
-# [*service_enable*]
-#   Whether Puppet's service should be enabled to start at boot
-#
 # === Authors
 #
 # Brendan Murtagh <brendan.r.murtagh@gmail.com>

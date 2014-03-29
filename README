@@ -1,16 +1,18 @@
-puppet
+puppet_agent
 
-This is the puppet module.
+Puppet module for managing a node's puppet.conf
 
 License
 -------
 
+Apache GPL v2
 
 Contact
 -------
 
+Brendan Murtagh <brendan.r.murtagh@gmail.com>
 
 Support
 -------
 
-Please log tickets and issues at our [Projects site](http://projects.example.com)
+Please log tickets and issues at https://github.com/bmurt/puppet_agent/issues

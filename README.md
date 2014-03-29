@@ -9,10 +9,10 @@ License
 
 Apache GPL v2
 
-Contact
+Author
 -------
 
-Brendan Murtagh \<brendan.r.murtagh@gmail.com\>
+* Brendan Murtagh
 
 Support
 -------

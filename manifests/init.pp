@@ -36,7 +36,7 @@ class puppet_agent (
   $open_source_logdir = $::puppet_agent::parmas::open_source_logdir
   $open_source_rundir = $::puppet_agent::parmas::open_source_rundir
 
-) inherits phrg_puppet::params {
+) inherits puppet_agent::params {
 
   # include supporting classes
   include puppet_agent::config

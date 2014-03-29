@@ -30,8 +30,8 @@ class puppet_agent (
   # open_source params
   $open_source_path   = $::puppet_agent::params::open_source_path,
   $open_source_bin    = $::puppet_agent::parmas::open_source_bin,
-  $open_source_group  = $::puppet_agent::parmas::open_source_group
   $open_source_user   = $::puppet_agent::parmas::open_source_user
+  $open_source_group  = $::puppet_agent::parmas::open_source_group
   $open_source_vardir = $::puppet_agent::parmas::open_source_vardir
   $open_source_logdir = $::puppet_agent::parmas::open_source_logdir
   $open_source_rundir = $::puppet_agent::parmas::open_source_rundir
@@ -43,23 +43,26 @@ class puppet_agent (
   include puppet_agent::service
 
   # validated module parameters
+  # general params
   validate_string($install_type)
-  validate_string($runinterval)
-  validate_string($puppetmaster)
-  validate_string($enterprise_path)
-  validate_string($open_source_path)
-  validate_string($enterprise_bin)
-  validate_string($open_source_bin)
   validate_string($config_template)
   validate_string($service_ensure)
   validate_bool($service_enable)
+  validate_string($runinterval)
+  validate_string($puppetmaster)
+  # enterprise params
+  validate_string($enterprise_path)
+  validate_string($enterprise_bin)
   validate_string($enterprise_user)
   validate_string($enterprise_group)
   validate_string($enterprise_vardir)
   validate_string($enterprise_logdir)
   validate_string($enterprise_rundir)
-  validate_string($open_source_group)
+  # open_source params
+  validate_string($open_source_path)
+  validate_string($open_source_bin)
   validate_string($open_source_user)
+  validate_string($open_source_group)
   validate_string($open_source_vardir)
   validate_string($open_source_logdir)
   validate_string($open_source_rundir)

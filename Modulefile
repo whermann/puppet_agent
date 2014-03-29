@@ -1,0 +1,7 @@
+name    'bmurt-puppet_agent'
+version '0.0.1'
+source 'https://github.com/bmurt/puppet_agent'
+author 'Brendan Murtagh'
+license 'Apache License, Version 2.0'
+summary 'Puppet module for managing a node's puppet.conf'
+description 'This module provides management for both Puppet Enterprise and Puppet Open Source editions for a node's puppet.conf'

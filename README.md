@@ -12,7 +12,7 @@ Apache GPL v2
 Contact
 -------
 
-Brendan Murtagh <brendan.r.murtagh@gmail.com>
+Brendan Murtagh \<brendan.r.murtagh@gmail.com\>
 
 Support
 -------

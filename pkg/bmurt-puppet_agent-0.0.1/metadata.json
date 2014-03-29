@@ -1,0 +1,27 @@
+{
+  "name": "bmurt-puppet_agent",
+  "version": "0.0.1",
+  "source": "https://github.com/bmurt/puppet_agent",
+  "author": "Brendan Murtagh",
+  "license": "Apache License, Version 2.0",
+  "summary": "Puppet module to manage the puppet.conf via Puppet for a node",
+  "description": "This module provides management of the puppet.conf for a node via Puppet. Supports Puppet Enterprise and Puppet Open Source editions",
+  "project_page": "UNKNOWN",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "9b917548cb2f6644ce554f237577bcc3",
+    "README.md": "5c1127e0e3b489c240dc1cb2473d5b3e",
+    "manifests/config.pp": "c690bcdb5218731ad209bc26e262ff75",
+    "manifests/init.pp": "8971a17d54cb54e03f49ed0a0f25d985",
+    "manifests/params.pp": "fcb7f4e1b06af50d3b276662b4ac2a01",
+    "manifests/service.pp": "74e5c4f957e611578feaa0c614037e60",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/puppet.conf.erb": "f3c86b9274265326dc2cab032f10d18d",
+    "tests/init.pp": "2dade839eb0e051c059dbf0993453510"
+  }
+}

@@ -12,11 +12,11 @@
 #
 class puppet_agent::service (
 
-  $puppet_service = $::puppet_agent::puppet_service,
-  $service_ensure = $::puppet_agent::service_ensure,
-  $service_enable = $::puppet_agent::service_enable,
+  $puppet_service = $::puppet_agent::puppet_service
+  $service_ensure = $::puppet_agent::service_ensure
+  $service_enable = $::puppet_agent::service_enable
 
-) inherits puppet_agent {
+) {
 
   service { $puppet_service:
     ensure     => $service_ensure,

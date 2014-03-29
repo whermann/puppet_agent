@@ -18,7 +18,3 @@ Support
 -------
 
 Please log tickets and issues at https://github.com/bmurt/puppet_agent/issues
-
-
-summary ''
-description 'This module provides management of the puppet.conf for a node via Puppet. '

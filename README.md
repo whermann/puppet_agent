@@ -12,7 +12,7 @@ Author
 Contributions
 -------
 
-* Contributions are encouraged. Please fork and the submit a PR for review.
+* Contributions are encouraged. Please fork and submit a PR for review.
 
 Support
 -------

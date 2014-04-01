@@ -17,6 +17,7 @@ class puppet_agent::config (
   $config_template    = $::puppet_agent::config_template,
   $puppet_service     = $::puppet_agent::puppet_service,
   $puppet_vardir      = $::puppet_agent::puppet_vardir,
+  $puppet_ssldir      = $::puppet_agent::puppet_ssldir,
   $puppet_logdir      = $::puppet_agent::puppet_logdir,
   $puppet_rundir      = $::puppet_agent::puppet_rundir,
   $puppet_user        = $::puppet_agent::puppet_user,

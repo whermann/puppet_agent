@@ -30,7 +30,7 @@
 #   Whether Puppet's service should be enabled to start at boot
 #
 # [*runinterval*]
-#   Configure Puppet's runinterval. Defaults to 28800 seconds (8 hrs)
+#   Configure Puppet's runinterval. Defaults to 1800 seconds (30 min)
 #
 # [*puppetmaster*]
 #   Configure the Puppet Master's FQDN
@@ -43,6 +43,9 @@
 #
 # [*enterprise_vardir*]
 #   Vardir path for Puppet Enterprise editon
+#
+# [*enterprise_ssldir*]
+#   Ssldir path for Puppet Enterprise editon
 #
 # [*enterprise_logdir*]
 #   Logdir path for Puppet Enterprise editon
@@ -58,6 +61,9 @@
 #
 # [*open_source_vardir*]
 #   Vardir path for Puppet Open Source editon
+#
+# [*open_source_ssldir*]
+#   Ssldir path for Puppet Open Source editon
 #
 # [*open_source_logdir*]
 #   Logdir path for Puppet Open Source editon
@@ -80,14 +86,20 @@ class puppet_agent::params {
   $config_template    = 'puppet_agent/puppet.conf.erb'
   $service_ensure     = 'running'
   $service_enable     = true
+<<<<<<< HEAD
   $runinterval        = '28800' # 8hrs
   $puppetmaster       = undef
+=======
+  $runinterval        = '1800' # 30 min
+  $puppetmaster       = 'puppetmaster.domain.com'
+>>>>>>> master
   # enterprise params
   $enterprise_path    = '/etc/puppetlabs/puppet'
   $enterprise_bin     = 'pe-puppet-agent'
   $enterprise_user    = 'pe-puppet'
   $enterprise_group   = 'pe-puppet'
   $enterprise_vardir  = '/var/opt/lib/pe-puppet'
+  $enterprise_ssldir  = '$confdir/ssl'
   $enterprise_logdir  = '/var/log/pe-puppet'
   $enterprise_rundir  = '/var/run/pe-puppet'
   # open_source params
@@ -95,7 +107,8 @@ class puppet_agent::params {
   $open_source_bin    = 'puppet'
   $open_source_user   = 'puppet'
   $open_source_group  = 'puppet'
-  $open_source_vardir = '/var/opt/lib/puppet'
+  $open_source_vardir = '/var/lib/puppet'
+  $open_source_ssldir = '$vardir/ssl'
   $open_source_logdir = '/var/log/puppet'
   $open_source_rundir = '/var/run/puppet'
 

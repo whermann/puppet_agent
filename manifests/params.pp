@@ -86,8 +86,8 @@ class puppet_agent::params {
   $config_template    = 'puppet_agent/puppet.conf.erb'
   $service_ensure     = 'running'
   $service_enable     = true
+  $puppetmaster       = undef
   $runinterval        = '1800' # 30 min
-  $puppetmaster       = 'puppetmaster.domain.com'
   # enterprise params
   $enterprise_path    = '/etc/puppetlabs/puppet'
   $enterprise_bin     = 'pe-puppet-agent'

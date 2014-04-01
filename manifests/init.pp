@@ -38,6 +38,10 @@ class puppet_agent (
 
 ) inherits puppet_agent::params {
 
+  if ($puppetmaster == 'UNSET') {
+    fail('The $puppetmaster must be configured for the module to function properly.')
+  }
+
   # validated module parameters
   # general params
   validate_string($install_type)

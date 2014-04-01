@@ -29,8 +29,11 @@ For example after testing a feature release, checkin with production:
 
 This minimal class can be added to any role/profile or node definition.
 
-Contributions
+Contributors
 -------
+
+* Rob Nelson - <rnelson0@gmail.com>
+
 
 * Contributions are encouraged. Please fork and submit a PR for review.
 

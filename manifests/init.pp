@@ -25,6 +25,7 @@ class puppet_agent (
   $enterprise_user    = $::puppet_agent::params::enterprise_user,
   $enterprise_group   = $::puppet_agent::params::enterprise_group,
   $enterprise_vardir  = $::puppet_agent::params::enterprise_vardir,
+  $enterprise_ssldir  = $::puppet_agent::params::enterprise_ssldir,
   $enterprise_logdir  = $::puppet_agent::params::enterprise_logdir,
   $enterprise_rundir  = $::puppet_agent::params::enterprise_rundir,
   # open_source params
@@ -33,6 +34,7 @@ class puppet_agent (
   $open_source_user   = $::puppet_agent::params::open_source_user,
   $open_source_group  = $::puppet_agent::params::open_source_group,
   $open_source_vardir = $::puppet_agent::params::open_source_vardir,
+  $open_source_ssldir = $::puppet_agent::params::open_source_ssldir,
   $open_source_logdir = $::puppet_agent::params::open_source_logdir,
   $open_source_rundir = $::puppet_agent::params::open_source_rundir,
 
@@ -52,6 +54,7 @@ class puppet_agent (
   validate_string($enterprise_user)
   validate_string($enterprise_group)
   validate_string($enterprise_vardir)
+  validate_string($enterprise_ssldir)
   validate_string($enterprise_logdir)
   validate_string($enterprise_rundir)
   # open_source params
@@ -60,6 +63,7 @@ class puppet_agent (
   validate_string($open_source_user)
   validate_string($open_source_group)
   validate_string($open_source_vardir)
+  validate_string($open_source_ssldir)
   validate_string($open_source_logdir)
   validate_string($open_source_rundir)
 
@@ -71,6 +75,7 @@ class puppet_agent (
       $puppet_user        = $enterprise_user
       $puppet_group       = $enterprise_group
       $puppet_vardir      = $enterprise_vardir
+      $puppet_ssldir      = $enterprise_ssldir
       $puppet_logdir      = $enterprise_logdir
       $puppet_rundir      = $enterprise_rundir
     }
@@ -80,6 +85,7 @@ class puppet_agent (
       $puppet_user        = $open_source_user
       $puppet_group       = $open_source_group
       $puppet_vardir      = $open_source_vardir
+      $puppet_ssldir      = $open_source_ssldir
       $puppet_logdir      = $open_source_logdir
       $puppet_rundir      = $open_source_rundir
     }

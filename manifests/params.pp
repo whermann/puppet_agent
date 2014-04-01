@@ -44,6 +44,9 @@
 # [*enterprise_vardir*]
 #   Vardir path for Puppet Enterprise editon
 #
+# [*enterprise_ssldir*]
+#   Ssldir path for Puppet Enterprise editon
+#
 # [*enterprise_logdir*]
 #   Logdir path for Puppet Enterprise editon
 #
@@ -58,6 +61,9 @@
 #
 # [*open_source_vardir*]
 #   Vardir path for Puppet Open Source editon
+#
+# [*open_source_ssldir*]
+#   Ssldir path for Puppet Open Source editon
 #
 # [*open_source_logdir*]
 #   Logdir path for Puppet Open Source editon
@@ -88,6 +94,7 @@ class puppet_agent::params {
   $enterprise_user    = 'pe-puppet'
   $enterprise_group   = 'pe-puppet'
   $enterprise_vardir  = '/var/opt/lib/pe-puppet'
+  $enterprise_ssldir  = '$confdir/ssl'
   $enterprise_logdir  = '/var/log/pe-puppet'
   $enterprise_rundir  = '/var/run/pe-puppet'
   # open_source params
@@ -96,6 +103,7 @@ class puppet_agent::params {
   $open_source_user   = 'puppet'
   $open_source_group  = 'puppet'
   $open_source_vardir = '/var/opt/lib/puppet'
+  $open_source_ssldir = '$vardir/ssl'
   $open_source_logdir = '/var/log/puppet'
   $open_source_rundir = '/var/run/puppet'
 

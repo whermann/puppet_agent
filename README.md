@@ -52,13 +52,14 @@ Notes
 Changelog
 -------
 
-* v0.0.1
-  - Initial Release
+* v0.0.3
+  - Update params to match out-of-the-box values
+  - Add examples
+  - Add verification for $puppetmaster value to ensure parameter is configured
 
 * v0.0.2
   - Bug Fixes
   - Set class execution order
 
-* v0.0.3
-  - Update params to match out-of-the-box values
-  - Add examples
+* v0.0.1
+  - Initial Release

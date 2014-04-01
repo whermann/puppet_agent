@@ -81,7 +81,7 @@ class puppet_agent::params {
   $service_ensure     = 'running'
   $service_enable     = true
   $runinterval        = '28800' # 8hrs
-  $puppetmaster       = 'UNSET'
+  $puppetmaster       = undef
   # enterprise params
   $enterprise_path    = '/etc/puppetlabs/puppet'
   $enterprise_bin     = 'pe-puppet-agent'

@@ -38,7 +38,7 @@ class puppet_agent (
 
 ) inherits puppet_agent::params {
 
-  if ($puppetmaster == 'UNSET') {
+  if !($puppetmaster) {
     fail('The $puppetmaster must be configured for the module to function properly.')
   }
 

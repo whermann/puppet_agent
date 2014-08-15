@@ -90,7 +90,10 @@ class puppet_agent::params {
   $runinterval        = '1800' # 30 min
   # enterprise params
   $enterprise_path    = '/etc/puppetlabs/puppet'
-  $enterprise_bin     = 'pe-puppet-agent'
+  case $puppetversion {
+    /^(2.7.*|2.8.*)$/: { $enterprise_bin     = 'pe-puppet-agent' }
+    default:           { $enterprise_bin     = 'pe-puppet' }
+  }
   $enterprise_user    = 'pe-puppet'
   $enterprise_group   = 'pe-puppet'
   $enterprise_vardir  = '/var/opt/lib/pe-puppet'

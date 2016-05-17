@@ -2,6 +2,7 @@
 
 [main]
     vardir = <%= @puppet_vardir %>
+    ssldir = <%= @puppet_ssldir %>
     logdir = <%= @puppet_logdir %>
     rundir = <%= @puppet_rundir %>
     modulepath = <%= @puppet_config_path %>/modules:/opt/puppet/share/puppet/modules
@@ -14,7 +15,7 @@
     environment = <%= @environment %>
     certname = <%= @fqdn %> 
     server = <%= @puppetmaster %>
-    report = true
+    report = <%= @report %>
     classfile = $vardir/classes.txt
     localconfig = $vardir/localconfig
     graph = true

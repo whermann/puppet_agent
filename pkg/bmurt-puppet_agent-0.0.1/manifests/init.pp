@@ -53,7 +53,7 @@ class puppet_agent (
   validate_bool($service_enable)
   validate_string($runinterval)
   validate_string($puppetmaster)
-  validate_string($report)
+  validate_bool($report)
   # enterprise params
   validate_string($enterprise_path)
   validate_string($enterprise_bin)

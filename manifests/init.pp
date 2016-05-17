@@ -19,6 +19,7 @@ class puppet_agent (
   $service_enable     = $::puppet_agent::params::service_enable,
   $runinterval        = $::puppet_agent::params::runinterval,
   $puppetmaster       = $::puppet_agent::params::puppetmaster,
+  $report             = $::puppet_agent::params::report,
   # enterprise params
   $enterprise_path    = $::puppet_agent::params::enterprise_path,
   $enterprise_bin     = $::puppet_agent::params::enterprise_bin,
@@ -52,6 +53,7 @@ class puppet_agent (
   validate_bool($service_enable)
   validate_string($runinterval)
   validate_string($puppetmaster)
+  validate_string($report)
   # enterprise params
   validate_string($enterprise_path)
   validate_string($enterprise_bin)

@@ -24,6 +24,7 @@ class puppet_agent::config (
   $puppet_group       = $::puppet_agent::puppet_group,
   $puppetmaster       = $::puppet_agent::puppetmaster,
   $runinterval        = $::puppet_agent::runinterval,
+  $report             = $::puppet_agent::report,
 
 ) inherits puppet_agent {
 

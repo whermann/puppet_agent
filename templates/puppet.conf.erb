@@ -15,7 +15,7 @@
     environment = <%= @environment %>
     certname = <%= @fqdn %> 
     server = <%= @puppetmaster %>
-    report = true
+    report = <%= @report %>
     classfile = $vardir/classes.txt
     localconfig = $vardir/localconfig
     graph = true

@@ -88,6 +88,7 @@ class puppet_agent::params {
   $service_enable     = true
   $puppetmaster       = undef
   $runinterval        = '1800' # 30 min
+  $report	      = true
   # enterprise params
   $enterprise_path    = '/etc/puppetlabs/puppet'
   case $puppetversion {
